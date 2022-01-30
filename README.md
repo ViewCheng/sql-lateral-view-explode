@@ -1,6 +1,7 @@
 在ETL过程中对row data进行处理，我们会经常用到lateral view explode。
 1: 什么情况下需要使用？
 students: {
+
     type: "array"
     student: {
         type: "struct"
