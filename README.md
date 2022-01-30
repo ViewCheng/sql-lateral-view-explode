@@ -1,0 +1,1 @@
+# sql-lateral-view-explode
