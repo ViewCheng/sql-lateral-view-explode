@@ -1,7 +1,7 @@
 在ETL过程中对row data进行处理，我们会经常用到lateral view explode。
 1: 什么情况下需要使用？
-students: {
 
+students: {
     type: "array"
     student: {
         type: "struct"
@@ -26,6 +26,7 @@ students: {
         .....
     }
 }
+
 当我们需要处理的对象是一个array的情况下，对于他的下一级会有多个student, 我们是无法通过data.students.student.name去选中所有的student的名字的，因为他将会是多个，系统是无法理解的。
 
 2: 如何使用？
